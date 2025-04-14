@@ -38,7 +38,7 @@ A Linux kernel module keylogger that captures user keystrokes at the kernel leve
 ### 🔧 Step 1: Compile the Module
 
 ```bash
-  make
+make
 ```
 
 ### ⚙️ Step 2: Load the Module
@@ -57,6 +57,8 @@ Only passwords that pass the validation policy are stored and displayed.
 sudo rmmod kdb_keylogger
 ```
 
+---
+
 ## 📝 Password Policy
 - A password is considered valid if it meets at least three of the following criteria:
 
@@ -71,11 +73,15 @@ sudo rmmod kdb_keylogger
 - abc123$
 - Xx99!!
 
+---
+
 ## 📦 AVL Tree Design
 - Each valid password is stored as a node in the AVL tree.
 - The AVL tree is height-balanced using standard rotations (LL, RR, LR, RL).
 - All insertions and traversals are logged using printk for debugging.
 - The /proc file returns an in-order traversal of the AVL tree.
+
+---
 
 ## 📌 Notes
 - This module only works on systems that support the legacy keyboard notifier interface (typically real or virtual terminals, not graphical environments).
