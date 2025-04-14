@@ -62,16 +62,16 @@ sudo rmmod kdb_keylogger
 ## 📝 Password Policy
 - A password is considered valid if it meets at least three of the following criteria:
 
-- Contains at least one lowercase letter
-- Contains at least one uppercase letter
-- Contains at least one number
-- Contains at least one special character
+  - Contains at least one lowercase letter
+  - Contains at least one uppercase letter
+  - Contains at least one number
+  - Contains at least one special character
 
 - Examples of valid passwords:
 
-- A1b!
-- abc123$
-- Xx99!!
+  - A1b!
+  - abc123$
+  - Xx99!!
 
 ---
 
